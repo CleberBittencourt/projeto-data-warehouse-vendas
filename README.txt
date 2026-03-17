@@ -1,26 +1,36 @@
 # Projeto Data Warehouse - Vendas
 
-Projeto de an�lise de vendas utilizando modelagem dimensional no SQL Server e visualiza��o no Power BI.
+Este projeto demonstra a construção de um Data Warehouse utilizando SQL Server e análise de dados com Power BI.
 
 ## Tecnologias utilizadas
 
 - SQL Server
+- Modelagem Dimensional (Star Schema)
 - Power BI
-- Modelagem Dimensional
+- Git / GitHub
 
-## Modelo de Dados
+## Estrutura do Data Warehouse
 
-![Modelo](Imagens/modelo_dw.png)
+Dimensões:
+- DimCliente
+- DimProduto
+- DimLoja
+- DimData
+
+Tabela Fato:
+- FatoVendas
+
+## Views Analíticas
+
+- vw_FaturamentoMensal
+- vw_TopClientes
+- vw_ProdutosMaisVendidos
+- vw_VendasPorLoja
 
 ## Dashboard
 
-![Dashboard](Imagens/dashboard.png)
+![Dashboard](Imagens/Dashboard.PNG)
 
-## Estrutura do Projeto
+## Objetivo
 
-Projeto-DataWarehouse-Vendas
-�
-+-- SQL
-+-- PowerBI
-+-- Imagens
-+-- README.md
+Simular um ambiente de BI onde dados transacionais são transformados em informações estratégicas para análise de vendas.
