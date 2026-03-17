@@ -7,7 +7,6 @@ Este projeto demonstra a construção de um Data Warehouse utilizando SQL Server
 - SQL Server
 - Modelagem Dimensional (Star Schema)
 - Power BI
-- Git / GitHub
 
 ## Estrutura do Data Warehouse
 
