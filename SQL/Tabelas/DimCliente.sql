@@ -1,13 +1,3 @@
-USE [ProjetoVendas]
-GO
-
-/****** Object:  Table [dbo].[DimCliente]    Script Date: 3/16/2026 9:02:00 AM ******/
-SET ANSI_NULLS ON
-GO
-
-SET QUOTED_IDENTIFIER ON
-GO
-
 CREATE TABLE [dbo].[DimCliente](
 	[ClienteKey] [int] IDENTITY(1,1) NOT NULL,
 	[ClienteCodigoERP] [int] NULL,
