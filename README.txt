@@ -1,88 +1,107 @@
-Data Warehouse - Análise de Vendas
+# Análise de Vendas com Data Warehouse e SQL
 
-Este projeto demonstra a construção de um Data Warehouse utilizando SQL Server e Power BI para análise de vendas.
+## Sobre o projeto
 
-Tecnologias utilizadas
+Este projeto foi desenvolvido com o objetivo de analisar dados de vendas a partir da construção de um Data Warehouse. A proposta foi estruturar os dados de forma organizada e eficiente, permitindo análises consistentes e geração de insights para apoio à tomada de decisão.
 
-SQL Server
+O processo envolveu desde a modelagem dimensional até a criação de consultas SQL e a construção de um dashboard para visualização dos resultados.
 
-Modelagem Dimensional (Star Schema)
+---
 
-Power BI
+## Objetivo
 
-Git e GitHub
+Organizar e transformar dados de vendas em informações úteis para o negócio, permitindo:
 
-Estrutura do Projeto
+* acompanhar o desempenho das vendas
+* identificar padrões de consumo
+* apoiar decisões baseadas em dados
 
-O Data Warehouse foi modelado utilizando o conceito de modelo estrela (Star Schema).
+---
 
-Tabelas Dimensão
+## Modelagem de dados
 
-DimCliente
+Foi utilizado o modelo dimensional no formato Star Schema, composto por uma tabela fato e tabelas dimensão.
 
-DimProduto
+**Tabela fato:**
 
-DimLoja
+* FatoVendas
 
-DimData
+**Tabelas dimensão:**
 
-Tabela Fato
+* DimCliente
+* DimProduto
+* DimLoja
+* DimData
 
-FatoVendas
+Esse modelo facilita a análise dos dados e melhora o desempenho das consultas.
 
-Granularidade
+---
 
-Cada linha da tabela FatoVendas representa um item vendido, considerando:
+## Tecnologias utilizadas
 
-Produto
+* SQL Server
+* T-SQL
+* Modelagem de dados
+* Power BI
 
-Cliente
+---
 
-Loja
+## Dashboard
 
-Data
+O dashboard foi desenvolvido para oferecer uma visão clara do desempenho de vendas, incluindo:
 
-Pedido
+* faturamento total
+* crescimento mês a mês (MoM)
+* ticket médio por venda
+* ranking de produtos
+* principais clientes por faturamento
 
-Isso permite análises detalhadas no nível de transação.
+![Dashboard de Vendas](Imagens/Dashboard.PNG)
 
-Views Analíticas
+---
 
-Foram criadas views para facilitar análises de negócio:
+## KPIs analisados
 
-vw_FaturamentoMensal
+* receita total
+* ticket médio
+* crescimento de vendas (MoM)
+* volume de vendas
+* desempenho por produto
+* desempenho por cliente
 
-vw_TopClientes
+---
 
-vw_ProdutosMaisVendidos
+## Principais análises
 
-vw_VendasPorLoja
+A partir dos dados, é possível observar:
 
-Exemplos de Análise
+* quais produtos têm maior impacto no faturamento
+* quais clientes concentram maior volume de compras
+* como as vendas variam ao longo do tempo
+* padrões que podem apoiar decisões estratégicas
 
-Com os dados modelados, é possível realizar:
+---
 
-Faturamento mensal e evolução de vendas
+## Estrutura do projeto
 
-Produtos mais vendidos
+```id="n8d9sj"
+/sql
+   criacao_tabelas.sql
+   insercao_dados.sql
+   analises.sql
 
-Clientes com maior volume de compras
+/Imagens
+   Dashboard.PNG
+```
 
-Desempenho de vendas por loja
+---
 
-Crescimento ao longo do tempo
+## Considerações finais
 
-Dashboard
+Este projeto representa uma aplicação prática de conceitos de Data Warehouse e análise de dados, com foco em simular um cenário próximo ao ambiente de negócio.
 
-Dashboard desenvolvido no Power BI para visualização das métricas de vendas.
+---
 
-
-
-
-Objetivo do Projeto
-
-Simular um ambiente de Business Intelligence onde dados transacionais são transformados em informações estratégicas para apoio à tomada de decisão.
-
-Autor
+## Autor
 
 Cleber Bittencourt
