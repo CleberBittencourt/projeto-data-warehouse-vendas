@@ -84,7 +84,6 @@ A partir dos dados, é possível observar:
 
 ## Estrutura do projeto
 
-```id="n8d9sj"
 /sql
    criacao_tabelas.sql
    insercao_dados.sql
@@ -92,7 +91,6 @@ A partir dos dados, é possível observar:
 
 /Imagens
    Dashboard.PNG
-```
 
 ---
 
